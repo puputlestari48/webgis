@@ -1,0 +1,47 @@
+/* --- RESET STYLING DASAR --- */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* --- NAVIGASI UTAMA (Berlaku untuk Semua Halaman) --- */
+nav {
+    background: #2c3e50; /* Warna biru gelap yang solid */
+    padding: 18px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Efek saat menu disorot (Hover) */
+nav a:hover {
+    color: #1abc9c; /* Warna hijau toska */
+}
+
+/* --- KHUSUS HALAMAN MAP (Menimpa Navigasi Standar) --- */
+/* Kode ini otomatis aktif hanya di halaman map.html karena struktur letaknya */
+body:has(.map-wrapper) nav {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(44, 62, 80, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 10px 30px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: auto;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - WebGIS Tanjung Riau</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Mengoptimalkan pembungkus konten utama beranda */
+        .home-container {
+            padding: 60px 20px;
+            max-width: 850px;
+            margin: 50px auto;
+        }
+
+        /* Membuat tampilan kartu konten yang modern dan elegan */
+        .hero-card {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border-top: 6px solid #2c3e50; /* Aksen warna senada dengan navbar */
+        }
+
+        .hero-card h1 {
+            color: #2c3e50;
+            font-size: 28px;
+            line-height: 1.4;
+            margin-top: 0;
+            font-weight: 700;
+        }
+
+        .hero-card hr {
+            border: 0;
+            height: 2px;
+            background: #1abc9c; /* Garis pembatas warna hijau toska signature */
+            margin: 25px 0;
+            width: 100px;
+        }
+
+        .hero-card p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        /* Tombol interaktif untuk langsung menjelajah peta */
+        .btn-explore {
+            display: inline-block;
+            background-color: #1abc9c;
+            color: white;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 15px;
+            box-shadow: 0 4px 15px rgba(26, 188, 156, 0.3);
+            transition: all 0.3s ease;
+            margin-top: 15px;
+        }
+
+        .btn-explore:hover {
+            background-color: #16a085;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(26, 188, 156, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="map.html">Map</a>
+        <a href="gallery.html">Gallery & Kontak</a>
+    </nav>
+    
+    <div class="home-container">
+        <div class="hero-card">
+            <h1>Pemberdayaan Masyarakat Kelurahan Tanjung Riau Kota Batam melalui Pemetaan Partisipatif untuk Penyusunan Peta Wilayah Berbasis SIG</h1>
+            <hr>
+            
+            <p>Selamat datang di WebGIS resmi yang disusun berdasarkan kegiatan Project-Based Learning (PBL) pemetaan partisipatif di Kelurahan Tanjung Riau.</p>
+            
+            <p>Projek ini merangkum data spasial berupa fasilitas umum, batas wilayah, jaringan jalan, serta objek penting lainnya guna mendukung perencanaan wilayah berbasis digital serta mendorong pemberdayaan masyarakat setempat.</p>
+            
+            <a href="map.html" class="btn-explore">Buka Peta Interaktif ➔</a>
+        </div>
+    </div>
+
+</body>
+</html>
